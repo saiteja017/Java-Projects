@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>employeemanagement</display-name>
+  <servlet>
+  	<servlet-name>registration</servlet-name>
+  	<servlet-class>employeemanagement.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registration</servlet-name>
+  	<url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>loginpage</servlet-name>
+  	<servlet-class>employeemanagement.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginpage</servlet-name>
+  	<url-pattern>/logins</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>app</servlet-name>
+  	<servlet-class>employeemanagement.EmployeeDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>app</servlet-name>
+  	<url-pattern>/details</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>editdetails</servlet-name>
+  	<servlet-class>employeemanagement.EditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>editdetails</servlet-name>
+  	<url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>updatedetails</servlet-name>
+  	<servlet-class>employeemanagement.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updatedetails</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>deletedetails</servlet-name>
+  	<servlet-class>employeemanagement.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>deletedetails</servlet-name>
+  	<url-pattern>/deleted</url-pattern>
+  </servlet-mapping>
+</web-app>
